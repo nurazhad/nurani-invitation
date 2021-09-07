@@ -1,11 +1,10 @@
-## Getting Started
+# Startup Landing
 
-Install the dependencies and run the development server
+## Description
+Simple 1-page website landing page for digital product using NextJS.
 
-```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
-```
+## Link
+<a href='https://start-up-landing.netlify.app/' target='_blank'>Startup Landing</a>
+
+## Screenshot
+<img src='./public/capture.jpg' />
