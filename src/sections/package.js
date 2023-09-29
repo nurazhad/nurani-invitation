@@ -6,225 +6,155 @@ import Carousel from 'react-multi-carousel';
 import PriceCard from 'components/price-card';
 import ButtonGroup from 'components/button-group';
 import SectionHeader from 'components/section-header';
-import { IoIosCheckmarkCircle, IoIosCloseCircle } from 'react-icons/io';
+import { IoIosCheckmarkCircle, IoIosCloseCircle  } from 'react-icons/io';
 
 const packages = {
-  monthly: [
+  undangan: [
     {
       id: 1,
-      name: 'Free Plan',
-      description: 'For Small teams or office',
-      buttonText: 'Start free trail',
-      priceWithUnit: '$0',
+      name: 'Basic',
+      buttonText: 'Pilih Paket',
+      priceWithUnit: 'Rp. 79.000',
       points: [
         {
           id: 1,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder',
+          text: 'Unlimited Nama Tamu',
           isAvailable: true,
         },
         {
           id: 2,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: "Masa Aktif 3 Bulan",
           isAvailable: true,
         },
         {
           id: 3,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
+          text: 'Profile Mempelai',
           isAvailable: true,
         },
         {
           id: 4,
-          icon: <IoIosCloseCircle />,
-          text: 'eCommerce Store ',
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Detail Info Acara ',
           isAvailable: true,
+        },
+        {
+          id: 5,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Quotes Do`a ',
+          isAvailable: true,
+        },{
+          id: 6,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Ucapan & Do`a Restu',
+          isAvailable: true,
+        },{
+          id: 7,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Backsound Music',
+          isAvailable: true,
+        },{
+          id: 8,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Hitung Mundur Acara',
+          isAvailable: true,
+        },{
+          id: 9,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Amplop Digital ',
+          isAvailable: true,
+        },{
+          id: 10,
+          icon: <IoIosCloseCircle />,
+          text: 'RSVP ',
+          isAvailable: false,
+        },{
+          id: 11,
+          icon: <IoIosCloseCircle />,
+          text: 'Video',
+          isAvailable: false,
         },
       ],
     },
     {
       id: 2,
-      name: 'Business king',
-      description: 'For Enterprise business',
-      priceWithUnit: '$15',
-      buttonText: 'Create account',
-      anotherOption: 'Or Start 14 Days trail',
+      name: 'Premium',
+      priceWithUnit: 'Rp. 99.000',
+      buttonText: 'Pilih Paket',
       points: [
         {
           id: 1,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder',
+          text: 'Unlimited Nama Tamu',
           isAvailable: true,
         },
         {
           id: 2,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: "Masa Aktif 3 Bulan",
           isAvailable: true,
         },
         {
           id: 3,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
+          text: 'Profile Mempelai',
           isAvailable: true,
         },
         {
           id: 4,
           icon: <IoIosCheckmarkCircle />,
-          text: 'eCommerce Store ',
+          text: 'Detail Info Acara ',
+          isAvailable: true,
+        },
+        {
+          id: 5,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Quotes Do`a ',
+          isAvailable: true,
+        },{
+          id: 6,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Ucapan & Do`a Restu',
+          isAvailable: true,
+        },{
+          id: 7,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Backsound Music',
+          isAvailable: true,
+        },{
+          id: 8,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Hitung Mundur Acara',
+          isAvailable: true,
+        },{
+          id: 9,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Amplop Digital ',
+          isAvailable: true,
+        },{
+          id: 10,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'RSVP ',
+          isAvailable: true,
+        },{
+          id: 11,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Video',
           isAvailable: true,
         },
       ],
     },
-    {
-      id: 3,
-      header: 'Suggested',
-      headerIcon: <IoIosCheckmarkCircle />,
-      name: 'Pro Master',
-      description: 'For pro level developers',
-      priceWithUnit: '$24',
-      buttonText: 'Create account',
-      anotherOption: 'Or Start 14 Days trail',
-      points: [
-        {
-          id: 1,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder',
-          isAvailable: true,
-        },
-        {
-          id: 2,
-          icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
-          isAvailable: true,
-        },
-        {
-          id: 3,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
-          isAvailable: true,
-        },
-        {
-          id: 4,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'eCommerce Store ',
-          isAvailable: true,
-        },
-      ],
-    },
+    
   ],
-  annual: [
-    {
-      id: 1,
-      name: 'Free Plan',
-      description: 'For Small teams or office',
-      buttonText: 'Start free trail',
-      priceWithUnit: '$0',
-      points: [
-        {
-          id: 1,
-          icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
-          isAvailable: true,
-        },
-        {
-          id: 2,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder',
-          isAvailable: true,
-        },
-        {
-          id: 3,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
-          isAvailable: true,
-        },
-        {
-          id: 4,
-          icon: <IoIosCloseCircle />,
-          text: 'eCommerce Store ',
-          isAvailable: true,
-        },
-      ],
-    },
-    {
-      id: 2,
-      name: 'Business king',
-      description: 'For Enterprise business',
-      priceWithUnit: '$25',
-      buttonText: 'Create account',
-      anotherOption: 'Or Start 10 Days trail',
-      points: [
-        {
-          id: 1,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'eCommerce Store',
-          isAvailable: true,
-        },
-        {
-          id: 2,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
-          isAvailable: true,
-        },
-        {
-          id: 3,
-          icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
-          isAvailable: true,
-        },
-        {
-          id: 4,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder ',
-          isAvailable: true,
-        },
-      ],
-    },
-    {
-      id: 3,
-      header: 'Suggested',
-      headerIcon: <IoIosCheckmarkCircle />,
-      name: 'Pro Master',
-      description: 'For pro level developers',
-      priceWithUnit: '$39',
-      buttonText: 'Create account',
-      anotherOption: 'Or Start 10 Days trail',
-      points: [
-        {
-          id: 1,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'eCommerce Store',
-          isAvailable: true,
-        },
-        {
-          id: 2,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
-          isAvailable: true,
-        },
-        {
-          id: 3,
-          icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
-          isAvailable: true,
-        },
-        {
-          id: 4,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder ',
-          isAvailable: true,
-        },
-      ],
-    },
-  ],
+
 };
 
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3,
+    items: 2,
     draggable: false,
   },
   tablet: {
@@ -240,19 +170,11 @@ const responsive = {
 };
 
 export default function Package() {
-  const { monthly, annual } = packages;
+  const { undangan } = packages;
   const [state, setState] = useState({
-    active: 'monthly',
-    pricingPlan: monthly,
+    active: 'undangan',
+    pricingPlan: undangan,
   });
-
-  const handlePricingPlan = (plan) => {
-    if (plan === 'annual') {
-      setState({ active: 'annual', pricingPlan: annual });
-    } else {
-      setState({ active: 'monthly', pricingPlan: monthly });
-    }
-  };
 
   const sliderParams = {
     additionalTransfrom: 0,
@@ -280,28 +202,8 @@ export default function Package() {
   return (
     <section id='pricing' sx={{ variant: 'section.pricing' }}>
       <Container>
-        <SectionHeader slogan='Pricing Plan' title='Choose your pricing plan' />
+        <SectionHeader slogan='Paket' title='Pilih Paket Anda' />
 
-        <Flex sx={styles.buttonGroup}>
-          <Box sx={styles.buttonGroupInner}>
-            <button
-              className={state.active === 'monthly' ? 'active' : ''}
-              type='button'
-              aria-label='Monthly'
-              onClick={() => handlePricingPlan('monthly')}
-            >
-              Monthly Plan
-            </button>
-            <button
-              className={state.active === 'annual' ? 'active' : ''}
-              type='button'
-              aria-label='Annual'
-              onClick={() => handlePricingPlan('annual')}
-            >
-              Annual Plan
-            </button>
-          </Box>
-        </Flex>
         <Box sx={styles.pricingWrapper} className='pricing__wrapper'>
           <Carousel {...sliderParams}>
             {state.pricingPlan.map((packageData) => (

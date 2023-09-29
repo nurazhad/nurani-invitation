@@ -18,16 +18,16 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        <SEO title='Home | Startup Landing' />
+        <SEO title='Nurani' />
         <Banner />
-        <KeyFeature />
+        {/* <KeyFeature />
         <ServiceSection />
         <Feature />
         <CoreFeature />
-        <WorkFlow />
+        <WorkFlow /> */}
         <Package />
-        <TeamSection />
-        <TestimonialCard />
+        {/* <TeamSection />
+        <TestimonialCard /> */}
       </Layout>
     </ThemeProvider>
   );

@@ -29,7 +29,7 @@ export default function PriceCard({
         <List items={points} childStyle={styles.listItem} />
         <Text className='package__price' sx={styles.price}>
           {priceWithUnit}
-          <span>/Monthly</span>
+          <span></span>
         </Text>
         <Box sx={styles.buttonGroup}>
           <Button variant='primary' aria-label={buttonText}>
@@ -56,7 +56,7 @@ const styles = {
     borderRadius: 20,
     position: 'relative',
     transition: 'all 0.3s',
-    p: ['35px 25px', null, null, '40px'],
+    p: ['50px 25px', null, null, '40px'],
     width: ['100%', '75%', '100%'],
     mb: '40px',
     mt: '40px',

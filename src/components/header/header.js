@@ -11,7 +11,7 @@ export default function Header({ className }) {
   return (
     <header sx={styles.header} className={className} id='header'>
       <Container sx={styles.container}>
-        <Logo src={LogoDark} />
+      <h1>Nurani Invitation</h1>
         <Flex as='nav' sx={styles.nav}>
           {menuItems.map((menuItem, i) => (
             <Link
@@ -32,7 +32,7 @@ export default function Header({ className }) {
           variant='secondary'
           aria-label='Get Started'
         >
-          Get Started
+          Contact
         </Button>
         <MobileDrawer />
       </Container>

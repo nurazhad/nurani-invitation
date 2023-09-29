@@ -9,9 +9,7 @@ export default function Footer() {
     <footer sx={styles.footer}>
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
-          <Link path='/'>
-            <Image src={FooterLogo} alt='logo' />
-          </Link>
+         
           <Box sx={styles.footer.menus}>
             <nav>
               {data.menuItem.map((item, i) => (
@@ -25,7 +23,7 @@ export default function Footer() {
             </nav>
           </Box>
           <Text sx={styles.footer.copyright}>
-            Copyright by {new Date().getFullYear()} Startup Landing
+            Copyright by {new Date().getFullYear()} NURANI INVITATION
           </Text>
         </Box>
       </Container>
