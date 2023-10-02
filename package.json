@@ -1,9 +1,10 @@
 {
-  "name": "Nurani",
+  "name": "nurani-invitation",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "start": "next start",
     "build": "next build && next export",
     "postbuild": "next-sitemap"
   },
